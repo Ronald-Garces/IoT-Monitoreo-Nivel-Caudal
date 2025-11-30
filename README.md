@@ -1,5 +1,5 @@
 # IoT-Monitoreo-Nivel-Caudal
-Prueba de Concepto: Sistema IoT para Monitoreo de Nivel y Caudal usando MQTT, Node-RED y Power BI
+**Prueba de Concepto: Sistema IoT para Monitoreo de Nivel y Caudal usando MQTT, Node-RED y Power BI**
 
 Este proyecto implementa un sistema IoT completamente simulado para monitorear el nivel de agua y estimar el caudal mediante una ESP32 en Wokwi, un flujo complejo en Node-RED, transporte MQTT y visualización en Power BI. La solución además registra datos en Google Sheets, genera un archivo TXT local y envía alertas automáticas a Telegram.
 
