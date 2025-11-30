@@ -55,11 +55,34 @@ Este proyecto implementa un sistema IoT completamente simulado para monitorear e
 ---
 
 ### 3. Configuración de Google Sheets
-El envío se realiza a través de Google Forms, que genera una hoja de cálculo automáticamente.
-- 
+- El envío se realiza a través de Google Forms, que genera una hoja de cálculo automáticamente.
+- Crear un formulario Google Forms con campos para:
+   - Valor
+   - Fecha
+   - Nivel
+   - Flujo
+   - Hora
+- Obtener la URL de envío
+- En Node-RED, reemplazar en el nodo HTTP (luego de la función 8)
+- **Importante:** El flujo utiliza las variables:
+   - msg.payload1  
+   - msg.payload2  
+   - msg.payload3  
+   - msg.payload4  
+   - msg.payload5
+- Cada una corresponde a un **entry** del formulario, y deben configurarse según sus IDs.
 
-### 3. Power BI
-- Crear un **Streaming Dataset**  
+---
+
+### 4. Power BI
+- En Power BI ir a **My workspace**, **New item**
+- Crear un **streaming dataset**
+- Campos necesarios:
+   - Valor (Number)
+   - FechaHora (DateTime)
+   - Nivel_cm (Number)
+   - Flujo_lps (Number)
+   - Hora (Text)  
 - Copiar la URL del endpoint  
 - Colocarla en el nodo HTTP de Node-RED (luego de la función 8) 
 - Visualización en Power BI:
@@ -68,9 +91,21 @@ El envío se realiza a través de Google Forms, que genera una hoja de cálculo 
 
 ---
 
-### 4. Telegram Bot
-- Crear un bot con **@BotFather**.  
-- Insertar token y chatId en los nodos correspondientes  
+### 5. Registro Local en Archivo TXT
+- Elegir una ruta donde se desea guardar el archivo .txt
+- Copiarla en el nodo **write file** de Node-RED (luego de las funciones 10 y 11)
+- El archivo puede replicarse como el `ejemplo-log.txt`
+
+---
+
+### 6. Telegram Bot
+- Abrir Telegram
+- Crear un bot con **@BotFather**.
+- Guardar token
+- Insertar token en el nodo **Telegram receiver**
+- Buscar su chat ID usando:
+   👉 https://api.telegram.org/bot<SU_TOKEN>/getUpdates
+- Insertar el chatId en la función 9  
 
 ---
 
