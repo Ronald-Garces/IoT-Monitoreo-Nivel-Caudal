@@ -63,7 +63,7 @@ Este proyecto implementa un sistema IoT completamente simulado para monitorear e
    - Flujo
    - Hora
 - Obtener la URL de envío
-- En Node-RED, reemplazar en el nodo HTTP (luego de la función 8)
+- En Node-RED, reemplazar en el nodo HTTP (luego de la función 7)
 - **Importante:** El flujo utiliza las variables:
    - msg.payload1  
    - msg.payload2  
