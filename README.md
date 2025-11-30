@@ -30,7 +30,9 @@ Este proyecto implementa un sistema IoT completamente simulado para monitorear e
 - Abrir https://wokwi.com  
 - Crear un proyecto ESP32
 - Armar el siguiente circuito
-- ![Flujo Node-RED](circuit-wokwi.png)
+
+![Flujo Node-RED](circuit-wokwi.png)
+
 - Copiar el contenido de `sketch.ino`
 - Dar clic en **Start the simulation**  
 
