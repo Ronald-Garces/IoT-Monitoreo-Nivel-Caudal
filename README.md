@@ -35,23 +35,28 @@ Este proyecto implementa un sistema IoT completamente simulado para monitorear e
 
 - Copiar el contenido de `sketch.ino`
 - Dar clic en **Start the simulation**
-- https://wokwi.com/projects/448838309663023105
+- Esto enviará el valor del sensor al flujo principal.
+- Puede abrir directamente el proyecto https://wokwi.com/projects/448838309663023105
 
 ---
 
 ### 2. Importar el flujo en Node-RED
 - Abrir Node-RED  
-- Menú **Import**  
-- Cargar `Industria 4.json`
-- Diagrama del Flujo en Node-RED:
+- Menú superior, clic en **Import**  
+- Seleccionar `Industria 4.json`
+- Se observará el diagrama del Flujo en Node-RED:
 
 ![Flujo Node-RED](node-red-flow.png) 
 
-- Hacer **Deploy**  
-- Ver dashboard en:  
+- Hacer clic en **Deploy**  
+- Acceder al dashboard:  
   👉 http://localhost:1880/ui
 
 ---
+
+### 3. Configuración de Google Sheets
+El envío se realiza a través de Google Forms, que genera una hoja de cálculo automáticamente.
+- 
 
 ### 3. Power BI
 - Crear un **Streaming Dataset**  
