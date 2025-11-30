@@ -34,7 +34,8 @@ Este proyecto implementa un sistema IoT completamente simulado para monitorear e
 ![Flujo Node-RED](circuit-wokwi.png)
 
 - Copiar el contenido de `sketch.ino`
-- Dar clic en **Start the simulation**  
+- Dar clic en **Start the simulation**
+- https://wokwi.com/projects/448838309663023105
 
 ---
 
