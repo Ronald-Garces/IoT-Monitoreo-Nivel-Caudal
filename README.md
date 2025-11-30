@@ -104,8 +104,7 @@ Este proyecto implementa un sistema IoT completamente simulado para monitorear e
 - Guardar token
 - Insertar token en el nodo **Telegram receiver**
 - Buscar su chat ID usando:
-  
-   👉 https://api.telegram.org/bot<SU_TOKEN>/getUpdates
+  👉 https://api.telegram.org/bot<SU_TOKEN>/getUpdates
 
 - Insertar el chatId en la función 9  
 
