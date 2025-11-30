@@ -41,10 +41,14 @@ Este proyecto implementa un sistema IoT completamente simulado para monitorear e
 ### 2. Importar el flujo en Node-RED
 - Abrir Node-RED  
 - Menú **Import**  
-- Cargar `Industria 4.json`  
-- Hacer deploy  
+- Cargar `Industria 4.json`
+- Diagrama del Flujo en Node-RED:
+
+![Flujo Node-RED](node-red-flow.png) 
+
+- Hacer **Deploy**  
 - Ver dashboard en:  
-  http://localhost:1880/ui
+  👉 http://localhost:1880/ui
 
 ---
 
@@ -52,23 +56,21 @@ Este proyecto implementa un sistema IoT completamente simulado para monitorear e
 - Crear un **Streaming Dataset**  
 - Copiar la URL del endpoint  
 - Colocarla en el nodo HTTP de Node-RED (luego de la función 8) 
+- Visualización en Power BI:
+  
+![Dashboard Power BI](powerbi-dashboard.png)
 
 ---
 
 ### 4. Telegram Bot
-- Crear bot con BotFather  
+- Crear un bot con **@BotFather**.  
 - Insertar token y chatId en los nodos correspondientes  
-
----
-
-## 🔗 Video de demostración
-*(Insertar URL aquí)*
 
 ---
 
 ## Autor(es)
 - Ronald Garcés
-- [Wilmer Olivarez]
+- Wilmer Olivarez
 
 ---
 
