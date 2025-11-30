@@ -29,9 +29,10 @@ Este proyecto implementa un sistema IoT completamente simulado para monitorear e
 ### 1. Ejecutar la ESP32 en Wokwi
 - Abrir https://wokwi.com  
 - Crear un proyecto ESP32
-- Armar el siguiente circuito ![Flujo Node-RED](circuit-wokwi.png)
+- Armar el siguiente circuito
+![Flujo Node-RED](circuit-wokwi.png)
 - Copiar el contenido de `sketch.ino`
-- Conectar WiFi simulada y broker MQTT público  
+- Dar clic en **Start the simulation**  
 
 ---
 
